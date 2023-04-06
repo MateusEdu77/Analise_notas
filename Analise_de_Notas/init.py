@@ -1,0 +1,2 @@
+def verificacao():
+    print('a')
