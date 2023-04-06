@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-import Analise_de_Notas.init
+import init as it
 sg.theme('DarkAmber')
 c1 = [
     [sg.T('Nome completo:')],
@@ -41,4 +41,4 @@ while True:
             valores['-ano-'] = ano[len(ano) - 1:len(ano)]
             ano = valores['-ano-']
         print(nome, serie, local, escola)
-        
+        it.verificacao(nome, ano, sala, escola, estado, cidade)
